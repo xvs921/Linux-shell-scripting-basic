@@ -16,4 +16,27 @@ jason -> read, write, execute
 teacher -> read, execute
 not jason and not teacher -> read, execute
 
-chmod +rx day1.sh
+chmod +rx day1.sh //give permissions to read and execute
+
+cat day1.sh //show full content
+
+#! => Shebang
+/bin/bash //here will search for interpreter
+
+NAVIGATE IN FOLDERS
+pwd //print working directory
+cd . //actual directory
+cd .. //go back with a / in directory
+cd jason //move to a specified folder
+/home/jason/day1.sh //run file
+
+type echo //answer echo is a shell builtin
+type -a echo //show where is echo
+
+/usr/bin/echo "Hello World"
+
+VARIABLES IN FILE
+nano day2.sh
+#!/bin/bash
+SKILL="shell scripting"
+echo "I want to be good at ${SKILL}. That's why I practice ${SKILL}."
